@@ -1,38 +1,60 @@
 body, html{
 	margin: 0;
 	padding: 0;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+
+}
+
+@keyframes rainbow {
+	0% { color: rgb(123, 255, 0); }
+	50% { color: rgb(255, 255, 255); }
+	100% {color: chartreuse;}
+}
+
+.rainbow-text {
+	animation: rainbow 1s infinite; /* Cambia il numero per modificare la velocità dell'animazione */
+}
+
+.lorem {
+	padding: 20px;
+	text-align: center; /* Modificato per centrare il testo */
+	width: 30vw;
+	margin: 0 auto; /* Aggiunto per centrare il contenitore */
+	justify-content: center;
 }
 
 .para_box{
+	justify-content: center;
 	position: relative;
-	height: 666px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-.para_back{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
 	background-position: center;
-	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	background-image: url("https://iorecoletas.com/wp-content/uploads/2021/04/post-ior-1-1080x675.jpg");
+	min-height: 100%;
+	overflow-y: auto;
 }
 
 .content {
 	position: relative;
+	justify-content: center;
 	z-index: 1;
 	text-align: center;
 }
 
-h1{
+h1 {
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: rgb(255, 255, 255);
+	font-size: 300px;
 }
 
 p {
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-style: italic;
 	font-weight: lighter;
+	color: palevioletred;
 }
+
+
